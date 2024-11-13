@@ -4,10 +4,9 @@
 
 ## 功能概述
 
-- 使用 BM25Okapi 模型進行文檔檢索，從大量文本中找到最相關的部分。
+- 程式利用向量嵌入和Chroma向量資料庫進行語義搜索，從文檔中檢索與查詢相關的文本。
 - 使用 jieba 進行中文分詞，以便更好地處理中文文本。
 - 支援從 PDF 文件中載入內容，並進行文本分割，使得長文本能夠更有效地進行檢索。
-- 利用 HuggingFaceEmbeddings 和 Chroma 向量存儲來生成向量嵌入，支持語義上的查詢與匹配。
 - 提供基於 LLMChain 和 HuggingFace 模型的問答功能。
 
 ## 環境需求
@@ -36,13 +35,9 @@ pip install torch jieba rank-bm25 langchain transformers tqdm chromadb
 
 使用 `load_documents(category, source_list)` 函數來載入文件。您可以根據需求指定不同的類別（如 "faq" 或 "pdf"），並提供相應的文件來源清單。
 
-```python
-documents = load_documents("faq", ["faq1.pdf", "faq2.pdf"])
-```
-
 ### 文本檢索與問答
 
-載入文件後，可以利用 BM25 模型進行檢索，並使用 HuggingFace 模型生成回應。
+載入文件後，利用 HuggingFaceEmbeddings 和 Chroma 向量存儲來生成向量嵌入，支持語義上的查詢與匹配。
 
 ### 提示模板
 
