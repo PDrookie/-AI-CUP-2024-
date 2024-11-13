@@ -29,15 +29,11 @@ pip install -r requirements.txt
 
 1. **載入文檔**
    
-   使用 `load_documents(category, source_list)` 函數載入文件。您可以根據需求指定不同的類別（例如 "faq" 或 "pdf"），並提供相應的文件來源清單。
-
-   ```python
-   documents = load_documents("faq", ["faq1.pdf", "faq2.pdf"])
-   ```
+   使用 `load_documents` 函數載入文件。您可以根據需求指定不同的類別（例如 "faq" 或 "pdf"），並提供相應的文件來源清單。
 
 2. **檢索與問答**
    
-   載入文檔後，可以使用 BM25 模型進行文本檢索，然後使用 HuggingFace 模型生成回應。
+   載入文檔後，可以使用程式進行文本檢索，然後使用 HuggingFace 模型生成回應。
 
 3. **OCR 文本處理**
    
