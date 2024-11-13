@@ -1,6 +1,6 @@
 # -AI-CUP-2024-
 
-## RAG 與 LLM 在金融問答的應用 - 初賽
+## AI CUP 2024 玉山人工智慧公開挑戰賽 - RAG 與 LLM 在金融問答的應用 - 初賽
 
 這個專案是針對 AI CUP 2024 初賽而設計，目標是利用 RAG (Retrieval-Augmented Generation) 和大型語言模型 (LLM) 技術，在金融問答情境中進行應用開發。
 
